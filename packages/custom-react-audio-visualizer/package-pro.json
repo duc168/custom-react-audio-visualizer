@@ -1,0 +1,7 @@
+{
+    "main": "../../lib/cjs/index.js",
+    "mainType": "../../lib/cjs/index.d.ts",
+    "module": "../../lib/esm/index.js",
+    "moduleType": "../../lib/esm/index.d.ts",
+    "types": "../../lib/esm/index.d.ts"
+}

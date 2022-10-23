@@ -1,0 +1,1 @@
+"custom-react-audio-visualizer": "link:.."

@@ -1,0 +1,55 @@
+{
+  "name": "custom-react-audio-visualizer",
+  "version": "0.0.15",
+  "main": "./lib/cjs/index.js",
+  "mainType": "./lib/cjs/index.d.ts",
+  "module": "./lib/esm/index.js",
+  "moduleType": "./lib/esm/index.d.ts",
+  "types": "./lib/esm/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "custom",
+    "visualizer",
+    "audio",
+    "react",
+    "react-audio-visualizer",
+    "react-visualizer",
+    "custom-react-audio-visualizer"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "20.0.0",
+    "@rollup/plugin-node-resolve": "13.0.4",
+    "@types/react": "17.0.19",
+    "@types/react-dom": "17.0.9",
+    "kill-port": "1.6.1",
+    "lerna": "4.0.0",
+    "postcss": "8.3.6",
+    "rollup": "2.56.2",
+    "rollup-plugin-dts": "4.0.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-postcss": "4.0.1",
+    "rollup-plugin-react-svg": "3.0.3",
+    "rollup-plugin-typescript2": "0.30.0",
+    "sass": "1.38.2",
+    "typescript": "4.3.5"
+  },
+  "scripts": {
+    "prestart": "lerna bootstrap",
+    "start": "lerna run start --parallel -- -- -r ./env",
+    "kill-all": "taskkill -F -IM node.exe",
+    "stop": "kill-port --port 3000",
+    "build-package": "lerna run --scope custom-react-audio-visualizer build-pro",
+    "build": "npm run build-package",
+    "remove-all-node-modules": "rm -rf node_modules && rm -rf packages/custom-react-audio-visualizer/node_modules && rm -rf packages/example/node_modules"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "/lib"
+  ],
+  "dependencies": {
+    "visualiser.js": "^1.0.0"
+  }
+}

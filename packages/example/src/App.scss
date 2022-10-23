@@ -1,0 +1,56 @@
+/*CentraNo2Light*/
+@font-face {
+  font-family: "CentraNo2";
+  font-weight: 300;
+  font-display: swap;
+  src: local("CentraNo2"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Light.woff2)
+      format("woff2"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Light.woff)
+      format("woff"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Light.eot);
+} /*CentraNo2Normal*/
+@font-face {
+  font-family: "CentraNo2";
+  font-weight: 400;
+  font-display: swap;
+  src: local("CentraNo2"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Book.woff2)
+      format("woff2"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Book.woff)
+      format("woff"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Book.eot);
+} /*CentraNo2Medium*/
+@font-face {
+  font-family: "CentraNo2";
+  font-weight: 500;
+  font-display: swap;
+  src: local("CentraNo2"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Medium.woff2)
+      format("woff2"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Medium.woff)
+      format("woff"),
+    url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Medium.eot);
+} /*CentraNo2Bold@font-face{font-family:'CentraNo2';font-weight:700;font-display:swap;src:local('CentraNo2'),url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Bold.woff2)format('woff2'),url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Bold.woff)format('woff'),url(https://cdn.autonomous.ai/static/css/font-face/CentraNo2-Bold.eot);}*/ /*BanglaMN@font-face{font-family:'BanglaMN';font-weight:700;font-display:swap;src:local('BanglaMN'),url(https://cdn.autonomous.ai/static/upload/images/common/upload/20200413/Bangla_MN.woff2)format('woff2'),url(https://cdn.autonomous.ai/static/upload/images/common/upload/20200413/Bangla_MN.woff)format('woff'),url(https://cdn.autonomous.ai/static/upload/images/common/upload/20200413/Bangla_MN.eot);}*/
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+@media (any-hover: hover) {
+  .is-animation-loading,
+  .is-component-loading {
+    opacity: 0;
+  }
+}
+
+body {
+  font-family: "CentraNo2";
+  background-color: #fafafa;
+}
+
+button {
+  font-family: "CentraNo2";
+}
+
+input {
+  font-family: "CentraNo2";
+}

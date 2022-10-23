@@ -1,0 +1,49 @@
+{
+  "name": "custom-react-audio-visualizer",
+  "version": "0.0.5",
+  "main": "./lib/cjs/index.js",
+  "mainType": "./lib/cjs/index.d.ts",
+  "module": "./lib/esm/index.js",
+  "moduleType": "./lib/esm/index.d.ts",
+  "types": "./lib/esm/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "custom",
+    "visualizer",
+    "audio",
+    "react",
+    "react-audio-visualizer",
+    "react-visualizer",
+    "custom-react-audio-visualizer"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "20.0.0",
+    "@rollup/plugin-node-resolve": "13.0.4",
+    "@types/react": "17.0.19",
+    "@types/react-dom": "17.0.9",
+    "postcss": "8.3.6",
+    "rollup": "2.56.2",
+    "rollup-plugin-dts": "4.0.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-postcss": "4.0.1",
+    "rollup-plugin-react-svg": "3.0.3",
+    "rollup-plugin-typescript2": "0.30.0",
+    "sass": "1.38.2",
+    "typescript": "4.3.5",
+    "styled-components": "5.3.6"
+  },
+  "scripts": {
+    "start": "rollup --environment ROLLUP_ENV:development -c -w",
+    "build-pro": "rollup --environment IS_PRODUCTION,ROLLUP_ENV:production -c",
+    "build-tsc": "rm -rf lib && yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "build:esm": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "/lib"
+  ]
+}
